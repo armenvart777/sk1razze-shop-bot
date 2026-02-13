@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.db
+*.db-shm
+*.db-wal
+.bot.lock
+*.log
+sk1razze_bot_FRIEND/
+sk1razze_bot*.zip
+package_demo.py
+package_full.py
