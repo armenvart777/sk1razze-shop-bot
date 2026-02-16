@@ -19,7 +19,10 @@ class Settings:
 
     def __post_init__(self):
         raw = os.getenv("ADMIN_IDS", "")
+        # Validate each entry is a valid integer before converting
         self.ADMIN_IDS = [int(x.strip()) for x in raw.split(",") if x.strip().isdigit()]
+        if not self.BOT_TOKEN:
+            raise ValueError("BOT_TOKEN must be set in environment")
 
 
 settings = Settings()
