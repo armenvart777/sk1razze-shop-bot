@@ -4,6 +4,8 @@ import os
 import sys
 import signal
 
+# Configure logging level via env or default to INFO
+
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
