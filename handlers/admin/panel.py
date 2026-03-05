@@ -8,6 +8,7 @@ from keyboards.callbacks import AdminPanelCB
 from keyboards.inline import admin_panel_keyboard
 
 router = Router(name="admin_panel")
+# Apply admin filter to all messages and callbacks in this router
 router.message.filter(IsAdmin())
 router.callback_query.filter(IsAdmin())
 
